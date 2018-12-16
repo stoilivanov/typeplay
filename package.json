@@ -1,0 +1,27 @@
+{
+  "name": "typeplay",
+  "version": "0.0.1",
+  "description": "simulate human typing of text on screen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "javascript",
+    "type",
+    "typer",
+    "mimic",
+    "simulate",
+    "keyboard"
+  ],
+  "author": "Stoil Ivanov",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "rollup": "^0.65.2",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-babel-minify": "^6.0.0",
+    "rollup-plugin-cleanup": "^3.0.0"
+  }
+}

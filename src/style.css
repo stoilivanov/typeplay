@@ -1,0 +1,16 @@
+@keyframes blink {
+    0%   {opacity: 1;}
+    49%  {opacity: 1;}
+    50%  {opacity: 0;}
+    99%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.typePlayBlinker {
+    position: relative;
+    left: -5px;
+    margin-right: -12px;
+    animation-name: blink;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}

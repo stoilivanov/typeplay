@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TypePlay Example 01</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="TypeContainer"></div>
+
+    <script src="../../dist/iife/TypePlay.js"></script>
+    <script>
+    
+        (function() {
+            const element = document.getElementById("TypeContainer");
+            let typer = new TypePlay(element, {typeSpeed: {min: 90, max: 240}});
+
+            typer
+                .wait(2500)
+                .eraseAll()
+                .type("Helo World!")
+                .erase(8)
+                .wait(70)
+                .type("lo World!")
+                .wait(620)
+                .type(" Check my source code..")
+                .wait(10000)
+                .repeat()
+                .play();
+
+        })();
+
+    </script>
+</body>
+</html>
