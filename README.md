@@ -13,14 +13,14 @@ npm install typeplay --save
 
 ### From GIT:
 ```sh
-git clone ...
+git clone https://github.com/stoilivanov/typeplay.git
 npm update
 npm run build
 ```
 
 ### From a Hotlink 
 ```html
-<script src="https://path_to_github/dest/iife/TypePlay.min.js"></script>
+<script src="https://github.com/stoilivanov/typeplay/blob/master/dist/iife/TypePlay.min.js"></script>
 ```
 
 ## CSS
@@ -36,8 +36,8 @@ The blinking cursor is a "|" character position and animated using css. Dependin
 
 .typePlayBlinker {
     position: relative;
-    left: -5px;
-    margin-right: -12px;
+    left: -5px;             /* Adjust to font */
+    margin-right: -12px;    /* Adjust to font */
     animation-name: blink;
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
@@ -50,8 +50,8 @@ TypePlay comes in CJS and IIFE formats pre-build:
 ##### IIFE
 If you would like to just add it in your browser and use it straight away use any of the IIFE version:
 ```html
-<script src="https://path_to_github/dest/iife/TypePlay.js"></script>
-<script src="https://path_to_github/dest/iife/TypePlay.min.js"></script>
+<script src="https://github.com/stoilivanov/typeplay/blob/master/dest/iife/TypePlay.js"></script>
+<script src="https://github.com/stoilivanov/typeplay/blob/master/dest/iife/TypePlay.min.js"></script>
 ```
 ##### CJS
 If you would like to package it together with other scripts in your App using Webpack or any other alternatife use the CJS version:
