@@ -18,11 +18,6 @@ npm update
 npm run build
 ```
 
-### From a Hotlink 
-```html
-<script src="https://github.com/stoilivanov/typeplay/blob/master/dist/iife/TypePlay.min.js"></script>
-```
-
 ## CSS
 The blinking cursor is a "|" character position and animated using css. Depending on your choice of ```font-family``` and ```font-size``` you might need to modify the ```left``` and ```margin-right``` properties. Adjust until blinking cursor stops dislocating the characters around it.
 ```css
@@ -48,10 +43,9 @@ The blinking cursor is a "|" character position and animated using css. Dependin
 ## Initialization 
 TypePlay comes in CJS and IIFE formats pre-build:
 ##### IIFE
-If you would like to just add it in your browser and use it straight away use any of the IIFE version:
 ```html
-<script src="https://github.com/stoilivanov/typeplay/blob/master/dest/iife/TypePlay.js"></script>
-<script src="https://github.com/stoilivanov/typeplay/blob/master/dest/iife/TypePlay.min.js"></script>
+<script src="path_to_source/dest/iife/TypePlay.js"></script>
+<script src="path_to_source/iife/TypePlay.min.js"></script>
 ```
 
 ##### Webpack
