@@ -53,32 +53,15 @@ If you would like to just add it in your browser and use it straight away use an
 <script src="https://github.com/stoilivanov/typeplay/blob/master/dest/iife/TypePlay.js"></script>
 <script src="https://github.com/stoilivanov/typeplay/blob/master/dest/iife/TypePlay.min.js"></script>
 ```
-##### CJS
-If you would like to package it together with other scripts in your App using Webpack or any other alternatife use the CJS version:
-```javascript
-import {TypeWrapper} from './dest/js/TypeWrap';
+
+##### Webpack
+Download with npm
+```sh
+npm install typeplay --save
 ```
 
+and import in your javascript before compiling with Webpack
 ```javascript
-import TypePlay from "TypePlay";
-
-let element = document.getElementById("scene");
-let typer = new TypePlay(element, {typeSpeed: {min: 90, max: 240}});
-typer
-    .wait(2500)
-    .eraseAll()
-    .type("PHP develo")
-    .eraseAll()
-    .wait(600)
-    .type("JavaScript Dev")
-    .eraseAll()
-    .wait(620)
-    .type("Software Developer")
-    .wait(10000)
-    .repeat()
-    .play();
-
+import TypePlay from 'typeplay';
 ```
 
-## Digging a little deeper
-If you dig a little deeper into the source you will notice that there are 2 classes - ```TypePlay``` and ```TypeWrap```. The second is there only to provide the chainability. Building the ```TypePlay``` source (the index.js file) will result in building ```TypeWrap```.
